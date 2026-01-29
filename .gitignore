@@ -1,0 +1,8 @@
+Template/
+**/build/
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+Test/
