@@ -2,6 +2,8 @@
 ![ARM](https://img.shields.io/badge/ARM-Cortex--M4-orange)
 ![Language](https://img.shields.io/badge/Language-C%2B%2B-green)
 ![Build](https://img.shields.io/badge/Build-Make-red)
+![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
 ![IMG_20260114_140556_768 (1)_1](https://github.com/user-attachments/assets/8243e93a-22cf-4189-a1d8-aa3dd9c43f7c)
 
 ## 📌 STM32 Bare-Metal Learning Labs
@@ -31,7 +33,8 @@ This is not production firmware — it is a **silicon exploration lab**.
 ## 🗂 Projects [Other will be added soon this repo is not complete yet]
 - [01 - Interrupt Based Binary Counter](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/01%20-%20Interrupt%20Based%20Binary%20Counter)
 - [02 - DMA Based Copying Array](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/02%20-%20DMA%20Based%20Copying%20Array)
-- [03 - 03 - PWM Based Breathing Effect](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/03%20-%20PWM%20Based%20Breathing%20Effect)
+- [03 - PWM Based Breathing Effect](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/03%20-%20PWM%20Based%20Breathing%20Effect)
+- [04 - USART Based Data Transmission](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/04%20-%20USART%20Based%20Data%20Transmission)
 
 ---
 
@@ -69,7 +72,6 @@ All projects use the same base toolchain:
 
 Flashing via:
 
-- `dfu-util`
 - `OpenOCD`  
 
 Build system: simple `Makefile` per project
@@ -80,13 +82,13 @@ Build system: simple `Makefile` per project
 
 - **Install Tools**  
   *-> For **Debian** based OS*
-  - `sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi dfu-util git make openocd`
+  - `sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi git make openocd`
   
   *-> For **Red Hat** based OS*
-  - `sudo dnf install arm-none-eabi-gcc-cs arm-none-eabi-binutils-cs arm-none-eabi-newlib dfu-util git make openocd`
+  - `sudo dnf install arm-none-eabi-gcc-cs arm-none-eabi-binutils-cs arm-none-eabi-newlib git make openocd`
   
   *-> For **Arch** based OS*
-  - `sudo pacman -S arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib dfu-util git make openocd`
+  - `sudo pacman -S arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib git make openocd`
   
 - **Verify Installation**
   - `arm-none-eabi-g++ --version`
@@ -97,7 +99,6 @@ Build system: simple `Makefile` per project
 
 - **Build & Flash**
     - Change directory to any project listed
-    - `sudo make dfu`
     - `sudo make openocd_flash`  
 
 ---
