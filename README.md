@@ -36,6 +36,7 @@ This is not production firmware — it is a **silicon exploration lab**.
 - [03 - PWM Based Breathing Effect](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/03%20-%20PWM%20Based%20Breathing%20Effect)
 - [04 - USART Based Data Transmission](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/04%20-%20USART%20Based%20Data%20Transmission)
 - [05 - DMA Based USART Circular Buffered Reply](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/05%20-%20DMA%20Based%20USART%20Circular%20Buffered%20Reply)
+- [06 - I2C Based Commuincation](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/06%20-%20I2C%20Based%20Commuincation)
 
 ---
 
