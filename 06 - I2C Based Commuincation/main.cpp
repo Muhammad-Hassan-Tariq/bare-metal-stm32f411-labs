@@ -1,7 +1,7 @@
 /**
  * @file    main.cpp
  * @author  [Muhammad Hassan Tariq/ https://github.com/Muhammad-Hassan-Tariq]
- * @brief   Bare-metal implementation of USART RX, TX in Circular Mode
+ * @brief   Bare-metal implementation of I2C
  * @details Implemented I2C Based Communication with Arduino as Controller
             100Khz Mode configured on I2C1.
             // Tabular Form
