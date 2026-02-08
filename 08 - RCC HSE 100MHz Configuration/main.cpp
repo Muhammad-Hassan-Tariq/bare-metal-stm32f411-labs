@@ -51,7 +51,7 @@ void SystemClock_Config(void) {
 void init_builtin_led() {
   RCC->AHB1ENR |= (1 << 2);
 
-  // 2. Configure PC13 as Output (MODER Register)
+  // Configure PC13 as Output (MODER Register)
   // Clear mode bits for 13, then set to 01 (General purpose output)
   GPIOC->MODER &= ~(3 << (13 * 2));
   GPIOC->MODER |= (1 << (13 * 2));
