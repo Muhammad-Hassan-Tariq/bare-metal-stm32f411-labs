@@ -30,7 +30,7 @@ void SystemClock_Config(void) {
 
   // Flash latency & Performance Boost [Instruction Cache, Prefetch & Data Cache]
   FLASH->ACR |= FLASH_ACR_PRFTEN | FLASH_ACR_ICEN | FLASH_ACR_DCEN;
-  FLASH->ACR = FLASH_ACR_LATENCY_3WS;
+  FLASH->ACR |= FLASH_ACR_LATENCY_3WS;
 
   // Prescalers
   RCC->CFGR |= RCC_CFGR_HPRE_DIV1;  // AHB = 100 MHz
