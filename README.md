@@ -39,6 +39,7 @@ This is not production firmware — it is a **silicon exploration lab**.
 - [06 - I2C Based Commuincation](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/06%20-%20I2C%20Based%20Commuincation)
 - [07 - SPI Based MISO Implementation](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/07%20-%20SPI%20Based%20MISO%20Implementation)
 - [08 - RCC HSE 100MHz Configuration](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/08%20-%20RCC%20HSE%20100MHz%20Configuration)
+- [09 - I2C Driver Read-Write Polling Based](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/09%20-%20I2C%20Driver%20%5BRead-Write%5D%20Polling%20Based)
 
 ---
 
