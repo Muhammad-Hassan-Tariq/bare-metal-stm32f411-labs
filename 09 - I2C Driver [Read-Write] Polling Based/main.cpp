@@ -1,3 +1,12 @@
+/**
+ * @file    main.cpp
+ * @author  [Muhammad Hassan Tariq/ https://github.com/Muhammad-Hassan-Tariq]
+ * @brief   Bare-metal implementation of I2C Driver
+ * @details Implemented Bare Metal I2C driver with polling. Read/ Write Single/ Multiple Bytes
+ * @date    2026-02-11
+ * @note    Target: STM32F411CEU6 (Black Pill)
+ */
+
 #include "../platform/drivers/stm32f411xe.h"
 #include <cstdint>
 
