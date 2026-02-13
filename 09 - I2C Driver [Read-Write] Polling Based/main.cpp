@@ -60,8 +60,8 @@ struct I2C_Functions {
     }
     static void i2c_send_data(uint8_t data) { I2C1->DR = data; }
     static void i2c_stop_condition() { I2C1->CR1 |= I2C_CR1_STOP; }
-    static void i2c_enable_ack(bool en_dis_ack) { I2C1->CR1 |= I2C_CR1_ACK; }
-    static void i2c_disable_ack(bool en_dis_ack) { I2C1->CR1 &= ~I2C_CR1_ACK; }
+    static void i2c_enable_ack() { I2C1->CR1 |= I2C_CR1_ACK; }
+    static void i2c_disable_ack() { I2C1->CR1 &= ~I2C_CR1_ACK; }
 
     static bool i2c_timeout_delay(I2C_Flags flag_check) {
         uint16_t timeout = I2C_timeout_VAL;
@@ -163,7 +163,7 @@ uint8_t i2c_read_single_byte(uint8_t dev_addr, uint8_t reg_addr) {
         return 0;
 
     I2C_Functions::i2c_send_dev_addr(dev_addr, false);
-    I2C_Functions::i2c_disable_ack(false);
+    I2C_Functions::i2c_disable_ack();
 
     if (!I2C_Functions::i2c_timeout_delay(ADDR))
         return 0;
@@ -174,7 +174,7 @@ uint8_t i2c_read_single_byte(uint8_t dev_addr, uint8_t reg_addr) {
         return 0;
 
     data = I2C1->DR;
-    I2C_Functions::i2c_enable_ack(true);
+    I2C_Functions::i2c_enable_ack();
 
     return data;
 }
@@ -207,13 +207,13 @@ void i2c_read_burst(uint8_t dev_addr, uint8_t start_reg, uint8_t *buffer, uint32
         return;
 
     // Enable ACKing so sensor keeps sending
-    I2C_Functions::i2c_enable_ack(true);
+    I2C_Functions::i2c_enable_ack();
     I2C_Functions::i2c_clear_status_register();
 
     for (uint32_t i = 0; i < length; i++) {
         if (i == (length - 1)) {
             // THE LAST BYTE: We must NACK and STOP before reading DR
-            I2C_Functions::i2c_disable_ack(false);
+            I2C_Functions::i2c_disable_ack();
             I2C_Functions::i2c_stop_condition();
         }
 
@@ -224,7 +224,7 @@ void i2c_read_burst(uint8_t dev_addr, uint8_t start_reg, uint8_t *buffer, uint32
     }
 
     // Re-enable ACK for the next transaction
-    I2C_Functions::i2c_enable_ack(true);
+    I2C_Functions::i2c_enable_ack();
 }
 
 /******************************************************************************
