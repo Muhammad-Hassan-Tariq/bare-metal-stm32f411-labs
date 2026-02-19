@@ -30,7 +30,7 @@ This is not production firmware — it is a **silicon exploration lab**.
 
 ---
 
-## 🗂 Projects [Other will be added soon this repo is not complete yet]
+## 🗂 Projects
 - [01 - Interrupt Based Binary Counter](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/01%20-%20Interrupt%20Based%20Binary%20Counter)
 - [02 - DMA Based Copying Array](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/02%20-%20DMA%20Based%20Copying%20Array)
 - [03 - PWM Based Breathing Effect](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/03%20-%20PWM%20Based%20Breathing%20Effect)
@@ -42,6 +42,7 @@ This is not production firmware — it is a **silicon exploration lab**.
 - [09 - I2C Driver Read-Write Polling Based](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/09%20-%20I2C%20Driver%20%5BRead-Write%5D%20Polling%20Based)
 - [10 - VL53L0X Driver I2C](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/10%20-%20VL53L0X%20Driver%20%5BI2C%5D)
 - [11 - Non Blocking Interrupt Driven USART Driver](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/11%20-%20Non%20Blocking%20Interrupt%20Driven%20USART%20Driver)
+- [12 - FSM Based Non Blocking I2C Driver](https://github.com/Muhammad-Hassan-Tariq/Bare-Metal-stm32f411-projects/tree/main/12%20-%20FSM%20Based%20Non%20Blocking%20I2C%20Driver)
 
 ### 📁 Project Directories
 
